@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+
+:root{
+    --primary-color:skyblue;
+    --secondary-color:#fef9c3;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background: var(--secondary-color);
+  margin: 0px;
+
+}
+
+
+.navigation {
+
+    background-color: var(--primary-color);
+    color: black;
+    border-radius: 3rem ;
+    width:40%;
+    margin: auto;
+ 
+   
+}
+.container {
+    padding: 1.5rem 1rem;
+}
+
+.navigation .nav-brand {
+
+    font-weight: bold;
+    font-family: 'Kalam', cursive;
+    font-size:xx-large;
+    font-style: oblique;
+    text-align: center;
+    padding: 1rem;
+    word-spacing: 0.2rem;
+
+}
+
+label {
+  display: block;
+  font-size: larger;
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem;
+  font-family: 'Chakra Petch', sans-serif;
+  margin-top: 1rem;
+
+}
+
+
+input {
+  display: block;
+  margin: auto;
+  font-size: 14px;
+  outline: #fff;
+  padding: 0.6rem 1rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 0.5rem;
+  width: 20%;
+  margin-top: 1rem;
+}
+
+button{
+   background-color: var(--primary-color);
+  border-radius: 0.5rem;
+  color: white;
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  outline: none;
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+  width: 10%;
+  font-size: larger;
+  border-color: var(--primary-color);
+}
+
+#result{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: larger;
+    font-family: 'Kalam', cursive;
+  }
+
+ footer{
+    margin-top: 2rem;
+    position: absolute;
+    bottom: 0;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+  }
+
+
+footer p {
+  font-size: large;
+  text-align: center;
+  padding-top: 3rem;
+  word-spacing: 0.4rem;
+   font-family: 'Permanent Marker', cursive;
+  
+}
+
+/* code */
+.social-links {
+  text-align: center;
+}
+.social-links > .link {
+  padding: 0 0.5rem;
+  text-decoration: none;
+  margin-right: 2rem;
+}
+/* code */
+
+.list-item-inline {
+  display: inline;
+  padding: 0rem 0.5rem;
+  margin: auto;
+}
+
+img {
+  width: 30px;
+}
+
+a,
+img,
+li {
+  display: inline;
+}
+
