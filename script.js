@@ -150,7 +150,7 @@ function getPreviousPalindromeDate(date) {
     if (isPalindrome) {
       break;
     }
-    previousDate = getPreviousDate(date);
+    previousDate = getPreviousDate(previousDate);
   }
   return [ctr, previousDate];
 }
@@ -185,10 +185,12 @@ function getPreviousDate(date) {
 
   }
 
-  return
-  {
-    day: day, month: month, year: year;
-  }
+  return {
+    day: day,
+    month: month,
+    year: year
+  };
+
 }
 
 
@@ -216,9 +218,10 @@ function clickHandler(e) {
         resultRef.innerText = 'Yay! your birthday is a palindrome!! 🥳🥳';
       }
       else {
-        var [ctr, nextDate] = getNextPalindromeDate(date);
+        var [ctr1, nextDate] = getNextPalindromeDate(date);
+        var [ctr2, previousDate] = getPreviousPalindromeDate(date);
 
-        resultRef.innerText = `The next palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year}, you missed it by ${ctr} days! 😔`;
+        resultRef.innerText = `The next palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year}, you missed it by ${ctr1} days! 😔 and previous palindrome date was ${previousDate.day}-${previousDate.month}-${previousDate.year} , you missed it by ${ctr2} days! 😔 `;
       }
     }
   } else {
